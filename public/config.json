@@ -1,0 +1,70 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData": {
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
+        "category": "message"
+    },
+    "type": "REST",
+    "lang": {
+        "en-US": {
+            "name": "XXXXXXX",
+          "description": "XXXXXXXXXXXXXXX",
+          "step1Label": "XXXXXX"
+        }
+    },
+    "arguments": {
+        "execute": {
+           "inArguments":[],
+          "outArguments": [],
+          "url": "XXXXXXXXXXXX?id=YYYYYYYYYY",
+           "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": false,
+            "timeout": 10000
+        }
+    },
+    "configurationArguments": {
+      "applicationExtensionKey": "XXXXXXX",
+      "save": {
+        "url": "XXXXXXXXXXXX",
+          "verb": "POST",
+        "useJwt": true
+       },
+       "publish": {
+        "url": "XXXXXXXXXXXX",
+           "verb": "POST",
+        "useJwt": true
+       },
+      "stop": {
+        "url": "XXXXXXXXXXX",
+           "verb": "POST",
+        "useJwt": true
+      },
+      "validate": {
+        "url": "XXXXXXXXXXXX",
+        "verb": "POST",
+        "useJwt": true
+      }
+    },
+    "wizardSteps": [
+        { "label": "Configure Activity", "key": "step1" }
+    ],
+    "userInterfaces": {
+        "configModal": {
+            "height": 400,
+            "width": 1000,
+          "fullscreen": false
+        }
+    },
+    "schema": {
+        "arguments": {
+            "execute": {
+                "inArguments": [],
+                "outArguments": []
+            }
+        }
+    }
+}

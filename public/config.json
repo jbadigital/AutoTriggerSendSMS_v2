@@ -8,16 +8,16 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "XXXXXXX",
-          "description": "XXXXXXXXXXXXXXX",
-          "step1Label": "XXXXXX"
+            "name": "Auto_Send_Triggered_SMS_v1",
+          "description": "This app retrieves the data from JB and passes to CloudPage for SMS trigger.",
+          "step1Label": "Auto Send SMS Activity"
         }
     },
     "arguments": {
         "execute": {
            "inArguments":[],
           "outArguments": [],
-          "url": "XXXXXXXXXXXX?id=YYYYYYYYYY",
+          "url": "https://page.super-retirement.com.au/auto-send-sms-execute?id=1234567",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -27,24 +27,24 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "XXXXXXX",
+      "applicationExtensionKey": "c3f5833a-32e2-4beb-98fd-5b94f71fbf1e",
       "save": {
-        "url": "XXXXXXXXXXXX",
+        "url": "https://page.super-retirement.com.au/auto-send-sms-save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "XXXXXXXXXXXX",
+        "url": "https://page.super-retirement.com.au/auto-send-sms-publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "XXXXXXXXXXX",
+        "url": "https://page.super-retirement.com.au/auto-send-sms-stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "XXXXXXXXXXXX",
+        "url": "https://page.super-retirement.com.au/auto-send-sms-validate",
         "verb": "POST",
         "useJwt": true
       }
